@@ -1,15 +1,26 @@
 #include <stdio.h>
 
 /**
- * Printing the best sentence in the world
- * Desription:Inafanya ile kitu
- *
- * Return: zero
+ * function_name - Short description, single line
+ * @parameterx: Description of parameter best_sentence
+(* a blank line
+ * Description: Longer description of the function)?
+(* section header: Section description)*
+ * Return: Description of the returned value
  */
 int main(void)
 {
+	/**
+	 * Inafanya ile kitu
+	 */
 	char best_sentence[] = "\"Programming is like building a multilingual puzzle";
-	puts(best_sentence);
 
+	/**
+	 * printing
+	 */
+	puts(best_sentence);
+	/**
+	 * inareturn ile kitu
+	 */
 	return (0);
 }
