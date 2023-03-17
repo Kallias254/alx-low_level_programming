@@ -1,0 +1,1 @@
+This series is for variables and if else statement in C
