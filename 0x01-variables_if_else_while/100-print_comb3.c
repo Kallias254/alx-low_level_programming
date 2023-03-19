@@ -6,21 +6,25 @@
  */
 int main(void)
 {
-int i, j;
+	int a;
+	int b;
 
-for (i = 0; i <= 9; i++)
-{
-	for (j = i + 1; j <= 9; j++)
+	for (a = '0' ; a <= '8' ; a++)
 	{
-	putchar(i + '0');
-	putchar(j + '0');
-		if (i != 8 || j != 9)
+		for (b = '1' ; b <= '9' ; b++)
+	{
+		if (b > a && b != a)
 		{
-		putchar(',');
-		putchar(' ');
+			putchar(a);
+			putchar(b);
+			if (a != '8')
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-}
+	}
 	putchar('\n');
 	return (0);
 }
