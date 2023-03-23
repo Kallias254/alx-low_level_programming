@@ -2,37 +2,35 @@
 
 /**
  *jack_bauer - jack bauer 24
- *
+ *No return statement
  */
 void jack_bauer(void)
 {
-	int a;
-	int b;
+	int a = '0';
+	int b = '0';
 	int c;
 	int d;
 
-	for (a = '0' ; a <= '2' ; a++)
+	while (a <= '2')
 	{
-		b = '0';
-		for (b = '0' ; b <= '3' ; b++)
+		b = 0;
+		while (b <= '9')
 		{
-			c = 0;
 			for (c = '0' ; c <= '5' ; c++)
 			{
-				d = '0';
 				for (d = '0' ; d <= '9' ; d++)
 				{
 					_putchar(a);
 					_putchar(b);
 					_putchar(':');
+					_putchar(b);
 					_putchar(c);
-					_putchar(d);
 					_putchar('\n');
 				}
-
-
 			}
+		b++;
 		}
+	a++;
 	}
 }
 
