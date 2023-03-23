@@ -16,11 +16,11 @@ int print_last_digit(int n)
 		last_digit = (last_digit / -1);
 		_putchar('0' + last_digit);
 	}
-	else if (n == 0)
+	else if (last_digit == 0)
 	{
 		_putchar('0' + last_digit);
 	}
-	else if (n > 0)
+	else if (last_digit > 0)
 	{
 		_putchar('0' + last_digit);
 	}
