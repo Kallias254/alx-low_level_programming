@@ -2,8 +2,8 @@
 
 /**
  *add - function that add two integers
- *@int: 1 of the numbers
- *@int: 2 of the numbers
+ *@a: 1 of the numbers
+ *@b: 2 of the numbers
  *Return: Returns the result.
  *
  */
