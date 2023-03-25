@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void mul_both();
-void mul_3();
-void mul_5();
+void mul_both(void);
+void mul_3(void);
+void mul_5(void);
 
 /**
  * main - Fizz-Buzz test
@@ -41,7 +41,7 @@ return (0);
 /**
  * mul_3 - function for multiples of 3
  */
-void mul_3()
+void mul_3(void)
 {
 	char out_3[] = "Fizz";
 
@@ -52,7 +52,7 @@ void mul_3()
 /**
  * mul_5 - function for multiples of 5
  */
-void mul_5()
+void mul_5(void)
 {
 	char out_5[] = "Buzz";
 
@@ -63,7 +63,7 @@ void mul_5()
 /**
  * mul_both - function for multiples of 5 and 3
  */
-void mul_both()
+void mul_both(void)
 {
 	char out_both[] = "FizzBuzz";
 
