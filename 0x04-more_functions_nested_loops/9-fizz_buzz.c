@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+void mul_both();
+void mul_3();
+void mul_5();
+
 /**
  * main - Fizz-Buzz test
  * Return: Always 0 successful.
@@ -8,28 +12,25 @@
 int main(void)
 {
 	int i;
-	char out_3[] = "Fizz";
-	char out_5[] = "Buzz";
-	char out_both[] = "FizzBuzz";
-	
+
 	for (i = 1 ; i <= 100 ; i++)
 	{
 	int result_3 = i % 3;
 	int result_5 = i % 5;
 	int result_both = i % 15;
 
-	if (result_3 > 0)
+	if (result_both == 0)
 	{
-		printf("%c", out_3[]);
-		mul_3(i);
-	} else if (result_5 > 0)
+		mul_both();
+		continue;
+	} else if (result_3 == 0)
 	{
-		printf("%c", out_5[]);
-		mul_5(i);
-	} else if (result_both > 0)
+		mul_3();
+		continue;
+	} else if (result_5 == 0)
 	{
-		printf("%c", out_both[]);
-		mul_both(i);
+		mul_5();
+		continue;
 	}
 		printf("%d", i);
 		putchar(' ');
@@ -38,31 +39,34 @@ int main(void)
 return (0);
 }
 /**
- * mul_3: function for multiples of 3
- *@i: for function 3
+ * mul_3 - function for multiples of 3
  */
-void mul_3(int i)
+void mul_3()
 {
 	char out_3[] = "Fizz";
-	printf("%c", out_3);
+
+	printf("%s", out_3);
+	putchar(' ');
 }
 
 /**
- * mul_5 function for multiples of 5
- *@i: for function 5
+ * mul_5 - function for multiples of 5
  */
-void mul_5(int i)
+void mul_5()
 {
 	char out_5[] = "Buzz";
-	printf("%c", out_5);
+
+	printf("%s", out_5);
+	putchar(' ');
 }
 
 /**
- * mul_both function for multiples of 5 and 3
- *@i: for function 5 and 3
+ * mul_both - function for multiples of 5 and 3
  */
-void mul_both(int i)
+void mul_both()
 {
 	char out_both[] = "Buzz";
-	printf("%c", out_both);
+
+	printf("%s", out_both);
+	putchar(' ');
 }
