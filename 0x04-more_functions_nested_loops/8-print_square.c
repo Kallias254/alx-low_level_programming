@@ -10,14 +10,19 @@ void print_square(int size)
 	char shebang = '#';
 	int rows = 0;
 	int i;
-
-	while (rows < size)
+	
+	if (size <= 0)
+		_putchar('\n');
+	else
 	{
-		for (i = 0 ; i < size ; i++)
+		while (rows < size)
 		{
-			_putchar(shebang);
-		}
+			for (i = 0 ; i < size ; i++)
+			{
+				_putchar(shebang);
+			}
 			_putchar('\n');
-		rows++;
+			rows++;
+		}
 	}
 }
