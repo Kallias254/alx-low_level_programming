@@ -65,7 +65,7 @@ void mul_5()
  */
 void mul_both()
 {
-	char out_both[] = "Buzz";
+	char out_both[] = "FizzBuzz";
 
 	printf("%s", out_both);
 	putchar(' ');
