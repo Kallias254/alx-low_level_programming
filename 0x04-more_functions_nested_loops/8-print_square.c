@@ -10,7 +10,7 @@ void print_square(int size)
 	char shebang = '#';
 	int rows = 0;
 	int i;
-	
+
 	if (size <= 0)
 		_putchar('\n');
 	else
