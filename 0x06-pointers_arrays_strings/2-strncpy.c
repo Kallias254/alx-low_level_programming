@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
  *_strncpy - concatinate 2 strings safely
@@ -10,11 +10,11 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int d;
 	int s;
 
-	for (d = 0 ; dest[d] != '\0' ; d++)
-		for (s = 0 ; s < n ; s++)
-			dest[s] = src[s];
+	for (s = 0 ; s < n && src[s] != '\0'; s++)
+		dest[s] = src[s];
+	for (; s < n ; s++)
+		dest[s] = '\0';
 return (dest);
 }
