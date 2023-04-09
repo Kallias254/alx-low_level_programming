@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *_whatsmyname - print the name of the program to stdout
+ *main - print the name of the program to stdout
  *@argv: the commandline string pointers
- *
+ *@argc: the number of argument strings
  *Return: Nothing.
  */
 int main(int argc, char **argv)
@@ -14,9 +14,9 @@ int main(int argc, char **argv)
 
 	for (i = 0 ; *str != '\0' ; i++)
 	{
-		putchar(*str);
+		_putchar(*str);
 		str++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
