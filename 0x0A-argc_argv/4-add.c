@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  *main - add commandline arguments
- *@argc:
- *@argv:
+ *@argc: the number of string arrays
+ *@argv: the actual string arrays being passed
  *
  *Return: 0 always successful
  */
